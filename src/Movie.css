@@ -1,0 +1,62 @@
+ .movies {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 3rem 3rem;
+    width: 80%;
+}
+
+.movies .movie {
+    width: 45%;
+    background-color: white;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: 300;
+    padding: 1rem;
+    color: #ADAEB9;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25);
+}
+
+.movie img {
+    position: relative;
+    top: -2rem;
+    max-width: 120px;
+    margin-right: 2rem;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25);
+}
+
+.movie__title,
+.movie__year {
+    margin: 0;
+    font-weight: 300;
+}
+
+.movie__title {
+    margin-bottom: .5rem;
+    font-size: 24px;
+    color: #333;
+}
+
+.movie__genres {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: .5rem 0
+}
+
+.movie__genres li {
+    margin-right: 1rem;
+    font-size: 14px;
+}
+
+.movie__summary {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    line-height: 1.6;
+    overflow: hidden;
+}
